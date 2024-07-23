@@ -5,7 +5,7 @@ st.title('Análisis Exploratorio de Datos de Vehículos')
 
 st.header('Datos de Vehículos de EE.UU.')
 
-car_data = pd.read_csv("C:\\Users\\emman\\Documents\\tripleten\\proyecto\\vehicles_us.csv")
+car_data = pd.read_csv('C:\\Users\\emman\\Documents\\tripleten\\proyecto\\notebooks\\vehicles_us.csv')
 
 if st.button('Mostrar Histograma del Año de los Vehículos'):
     st.write("Histograma del año de los vehículos:")
