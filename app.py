@@ -11,3 +11,8 @@ if st.button('Mostrar Histograma del Año de los Vehículos'):
     st.write("Histograma del año de los vehículos:")
     fig = px.histogram(car_data, x='model_year')
     st.plotly_chart(fig)
+
+if st.button('Mostrar Gráfico de Dispersión Precio vs Millaje'):
+    st.write("Gráfico de dispersión del precio vs millaje de los vehículos:")
+    scatter_fig = px.scatter(car_data, x='odometer', y='price')
+    st.plotly_chart(scatter_fig)
